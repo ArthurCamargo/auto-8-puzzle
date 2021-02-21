@@ -1,6 +1,3 @@
-#|1|2|3|
-#|4|5|6|
-#|7|*|8|
 def mexe(estado, cursor, direcao):
     """Mexe as pecas do jogo na direcao dada"""
     estado = list(estado)

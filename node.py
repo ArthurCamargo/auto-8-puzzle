@@ -2,7 +2,7 @@ class Node:
     """ Node do grafo de busca """
     
     def __init__(self,pai=None, estado=None, custo=0,
-                    acao='abaixo', filhos=[]):
+                    acao=None, filhos=[]):
         self.pai = pai
         self.estado = estado
         self.custo= custo
@@ -18,4 +18,4 @@ class Node:
             pai = "Primeiro Nodo"
             
 
-        return str('(' + estado + custo + acao + pai + ')')
+        return str('(' + acao + estado + custo + pai + ')')
